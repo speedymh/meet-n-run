@@ -23,21 +23,22 @@ body {
     max-width: 960px;
     margin: 0 auto; }
     body section .event {
-      box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+      box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.165);
       background: white;
       border-radius: 5px;
       position: relative;
       margin: 0 20px 25px;
-      cursor: pointer;
       max-height: 96px;
       overflow: hidden;
-      transition: all 1s ease-in-out; }
+      transition: max-height 1s ease-in-out, box-shadow .25s ease-in-out; }
       body section .event:hover {
-        max-height: 500px; }
+        max-height: 1000px;
+        box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.25); }
       body section .event .card-header {
         display: -webkit-flex;
         display: -ms-flexbox;
-        display: flex; }
+        display: flex;
+        cursor: pointer; }
         body section .event .card-header .date {
           display: -webkit-flex;
           display: -ms-flexbox;
@@ -50,11 +51,11 @@ body {
           justify-content: center;
           font-size: 2.6em;
           font-weight: 100;
-          border-right: 2px solid rgba(0, 0, 0, 0.2);
+          border-right: 2px solid rgba(0, 0, 0, 0.15);
           margin: 10px;
-          padding: 10px 12px 10px 10px; }
+          padding: 10px 20px 10px 10px; }
         body section .event .card-header .card-info {
-          margin-left: 40px;
+          margin-left: 30px;
           display: -webkit-flex;
           display: -ms-flexbox;
           display: flex;
@@ -79,3 +80,27 @@ body {
             width: 40px;
             height: 40px;
             font-size: 1.56em; }
+      body section .event hr {
+        background: rgba(0, 0, 0, 0.1);
+        height: 1px;
+        border: none;
+        margin-bottom: 10px; }
+      body section .event .strecke {
+        margin: 20px 20px -10px; }
+      body section .event .table-wrapper {
+        padding: 20px; }
+        body section .event .table-wrapper table {
+          width: 100%; }
+          body section .event .table-wrapper table tr td {
+            font-size: 1.09em;
+            padding: 6px; }
+            body section .event .table-wrapper table tr td.name {
+              width: 55%; }
+            body section .event .table-wrapper table tr td > a {
+              text-decoration: none;
+              color: inherit;
+              transition: all .3s ease-in-out; }
+              body section .event .table-wrapper table tr td > a:hover {
+                text-decoration: underline; }
+            body section .event .table-wrapper table tr td.symbol {
+              width: 45%; }

@@ -33,21 +33,22 @@ body
     margin: 0 auto
 
     .event
-      box-shadow: 0px 0px 15px rgba(0,0,0,.2)
+      box-shadow: 0px 0px 15px rgba(0,0,0,.165)
       background: white
       border-radius: 5px
       position: relative
       margin: 0 20px 25px
-      cursor: pointer
       max-height: 96px
       overflow: hidden
-      transition: all 1s ease-in-out
+      transition: max-height 1s ease-in-out, box-shadow .25s ease-in-out
 
       &:hover
-        max-height: 500px
+        max-height: 1000px
+        box-shadow: 0px 0px 15px rgba(0,0,0,.25)
 
       .card-header
         display: flex
+        cursor: pointer
 
         .date
           display: flex
@@ -58,12 +59,12 @@ body
             size: 2.6em
             weight: 100
 
-          border-right: 2px solid rgba(0,0,0,.2)
+          border-right: 2px solid rgba(0,0,0,.15)
           margin: 10px
-          padding: 10px 12px 10px 10px
+          padding: 10px 20px 10px 10px
 
         .card-info
-          margin-left: 40px
+          margin-left: 30px
           display: flex
           flex-direction: column
           justify-content: center
@@ -89,3 +90,39 @@ body
             width: 40px
             height: 40px
             font-size: 1.56em
+
+      hr
+        background: rgba(0,0,0,.1)
+        height: 1px
+        border: none
+        margin-bottom: 10px
+
+      .strecke
+        margin: 20px 20px -10px
+
+      .table-wrapper
+        padding: 20px
+
+        table
+          width: 100%
+
+          tr
+
+            td
+              font:
+                size: 1.09em
+              padding: 6px
+
+              &.name
+                width: 55%
+
+              >a
+                text-decoration: none
+                color: inherit
+                transition: all .3s ease-in-out
+
+                &:hover
+                  text-decoration: underline
+
+              &.symbol
+                width: 45%
