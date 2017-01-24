@@ -4,6 +4,9 @@
 
 $yellow: #ffc107
 $blue: #2196f3
+
+$green: #1ec258
+
 $primarytext: #212121
 
 *
@@ -127,6 +130,43 @@ body
                 width: 55%
 
               &.symbol
+                display: flex
+
+                .sym
+                  height: 38px
+                  color: white
+                  border-radius: 19px
+                  display: flex
+                  align-items: center
+                  justify-content: center
+                  margin-left: 5px
+
+                  i
+                    font-size: 1.08em
+
+                  &.abfahrt
+                    position: relative
+                    background: $blue
+                    // overflow: hidden !! vielleicht mit nem parent mit overflow ausprobieren
+                     width: 240px
+                    //  width sollte flexibel sein
+
+                    &>i
+                      border-radius: 19px
+                      box-shadow: 0px 0px 10px black
+                      height: 38px
+                      width: 38px
+                      display: flex
+                      align-items: center
+                      justify-content: center
+
+                    &>p
+                      font-size: .9em
+                      margin: 0 10px
+
+                  &.angebot
+                    background: $green
+                    min-width: 38px
 
               >a
                 text-decoration: none

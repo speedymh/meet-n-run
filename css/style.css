@@ -105,6 +105,49 @@ body {
             padding: 6px; }
             body section .event .table-wrapper table tr td.name {
               width: 55%; }
+            body section .event .table-wrapper table tr td.symbol {
+              display: -webkit-flex;
+              display: -ms-flexbox;
+              display: flex; }
+              body section .event .table-wrapper table tr td.symbol .sym {
+                height: 38px;
+                color: white;
+                border-radius: 19px;
+                display: -webkit-flex;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-align-items: center;
+                -ms-flex-align: center;
+                align-items: center;
+                -webkit-justify-content: center;
+                -ms-flex-pack: center;
+                justify-content: center;
+                margin-left: 5px; }
+                body section .event .table-wrapper table tr td.symbol .sym i {
+                  font-size: 1.08em; }
+                body section .event .table-wrapper table tr td.symbol .sym.abfahrt {
+                  position: relative;
+                  background: #2196f3; }
+                  body section .event .table-wrapper table tr td.symbol .sym.abfahrt > i {
+                    border-radius: 19px;
+                    box-shadow: 0px 0px 10px black;
+                    height: 38px;
+                    width: 38px;
+                    display: -webkit-flex;
+                    display: -ms-flexbox;
+                    display: flex;
+                    -webkit-align-items: center;
+                    -ms-flex-align: center;
+                    align-items: center;
+                    -webkit-justify-content: center;
+                    -ms-flex-pack: center;
+                    justify-content: center; }
+                  body section .event .table-wrapper table tr td.symbol .sym.abfahrt > p {
+                    font-size: .9em;
+                    margin: 0 10px; }
+                body section .event .table-wrapper table tr td.symbol .sym.angebot {
+                  background: #1ec258;
+                  min-width: 38px; }
             body section .event .table-wrapper table tr td > a {
               text-decoration: none;
               color: inherit;
