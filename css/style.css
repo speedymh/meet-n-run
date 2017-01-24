@@ -32,8 +32,9 @@ body {
       overflow: hidden;
       transition: max-height 1s ease-in-out, box-shadow .25s ease-in-out; }
       body section .event:hover {
-        max-height: 1000px;
         box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.25); }
+      body section .event.expand {
+        max-height: 1000px; }
       body section .event .card-header {
         display: -webkit-flex;
         display: -ms-flexbox;
@@ -80,6 +81,14 @@ body {
             width: 40px;
             height: 40px;
             font-size: 1.56em; }
+            body section .event .card-header .card-info > button .fa-angle-down {
+              transition: all .7s ease-in-out .0s;
+              -webkit-transform: rotateX(0deg);
+              transform: rotateX(0deg); }
+              body section .event .card-header .card-info > button .fa-angle-down.close {
+                -webkit-transform: rotateZ(180deg);
+                -ms-transform: rotate(180deg);
+                transform: rotateZ(180deg); }
       body section .event hr {
         background: rgba(0, 0, 0, 0.1);
         height: 1px;
